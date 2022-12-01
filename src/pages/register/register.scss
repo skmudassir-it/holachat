@@ -1,0 +1,91 @@
+.register {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(circle, rgba(217, 77, 230, 0.701), rgb(240, 240, 238), rgba(55, 81, 175, 0.678));
+    .card {
+      width: 60%;
+      display: flex;
+      background: rgba(109, 109, 157, 0.42);
+      border-radius: 20px;
+      min-height: 600px;
+      overflow: hidden;
+      flex-direction: row-reverse;
+      .left {
+        flex: 1;
+        background: linear-gradient(rgba(255, 0, 0, 0.35), rgba(0, 0, 0, 0.5)),
+          url("https://images.pexels.com/photos/3127880/pexels-photo-3127880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+            center;
+        background-size: cover;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        color: white;
+        h1 {
+          font-size: 100px;
+          line-height: 85px;
+        }
+  
+        p {
+            font-weight: bold;
+            color: rgb(240, 241, 241);
+        }
+  
+        span {
+          font-size: 14px;
+        }
+  
+        button {
+          width: 50%;
+          padding: 10px;
+          border: none;
+          background-color: white;
+          color: #6c54b5ba;
+          font-weight: bold;
+          cursor: pointer;
+          border-radius: 16px;
+        }
+      }
+  
+      .right {
+          flex: 1;
+          padding: 50px;
+          display: flex;
+          flex-direction: column;
+          gap: 50px;
+          justify-content: center;
+    
+          h1 {
+          color: #555;
+          }
+          
+          form {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            
+            input {
+            border: none;
+            border-bottom: 1px solid lightgray;
+            padding: 20px 10px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 2px black, 0 0 25px rgba(174, 172, 134, 0.605), 0 0 5px darkblue;
+            }
+            
+            button {
+              width: 50%;
+              padding: 10px;
+              border: none;
+              background-color: #938eef;
+              color: white;
+              font-weight: bold;
+              cursor: pointer;
+              border-radius: 16px;
+          }
+        }
+      }
+    }
+  }
+  
