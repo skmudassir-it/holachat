@@ -3,11 +3,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(-45deg, rgb(213, 162, 165), #f3f3f3, #f3f3);
+  background-image: radial-gradient(
+    circle,
+    rgba(217, 77, 230, 0.701),
+    rgb(240, 240, 238),
+    rgba(55, 81, 175, 0.678)
+  );
   .card {
     width: 60%;
     display: flex;
-    background: linear-gradient(120deg, rgba(207, 224, 145, 0.587), rgba(129, 192, 151, 0.587));
+    background: rgba(109, 109, 157, 0.42);
     border-radius: 20px;
     min-height: 600px;
     overflow: hidden;
@@ -28,6 +33,8 @@
       }
 
       p {
+        font-weight: bold;
+        color: rgb(240, 241, 241);
       }
 
       span {
@@ -42,40 +49,45 @@
         color: #6c54b5ba;
         font-weight: bold;
         cursor: pointer;
+        border-radius: 16px;
       }
     }
 
     .right {
-        flex: 1;
-        padding: 50px;
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      justify-content: center;
+
+      h1 {
+        color: #555;
+      }
+
+      form {
         display: flex;
         flex-direction: column;
-        gap: 50px;
-        justify-content: center;
-  
-        h1 {
-        color: #555;
-        }
-        
-        form {
-          display: flex;
-          flex-direction: column;
-          gap: 30px;
-          
-          input {
+        gap: 30px;
+
+        input {
           border: none;
           border-bottom: 1px solid lightgray;
           padding: 20px 10px;
-          }
-          
-          button {
-            width: 50%;
-            padding: 10px;
-            border: none;
-            background-color: #938eef;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
+          border-radius: 10px;
+          box-shadow: 1px 1px 2px black, 0 0 25px rgba(174, 172, 134, 0.605),
+            0 0 5px darkblue;
+        }
+
+        button {
+          width: 50%;
+          padding: 10px;
+          border: none;
+          background-color: #938eef;
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+          border-radius: 16px;
         }
       }
     }
